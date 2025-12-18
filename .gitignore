@@ -20,6 +20,7 @@ ENV/
 
 # ====== OS / editor ======
 .DS_Store
+<<<<<<< HEAD
 .vscode/
 .idea/
 
@@ -37,3 +38,11 @@ checkpoints/
 # ====== allow models (KEEP) ======
 !models/
 !models/**
+=======
+*.log
+
+# ---- track only trained model files ----
+models/*
+!models/*.joblib
+!models/.gitkeep
+>>>>>>> 19b2172 (Track trained model (.joblib) only)
