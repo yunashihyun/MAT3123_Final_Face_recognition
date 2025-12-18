@@ -1,15 +1,39 @@
-# env
+# ====== Python ======
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.dist/
+build/
+dist/
+
+# ====== venv ======
 .venv/
 venv/
-__pycache__/
-*.pyc
+ENV/
+.env
+
+# ====== Jupyter ======
 .ipynb_checkpoints/
 
-# data & outputs (don't commit)
-data/
-artifacts/
-models/
-
-# misc
+# ====== OS / editor ======
 .DS_Store
-*.log
+.vscode/
+.idea/
+
+# ====== project outputs (IGNORE) ======
+artifacts/
+data/
+runs/
+logs/
+checkpoints/
+*.npz
+*.npy
+*.pt
+*.pth
+
+# ====== allow models (KEEP) ======
+!models/
+!models/**
