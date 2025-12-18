@@ -1,0 +1,15 @@
+# env
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# data & outputs (don't commit)
+data/
+artifacts/
+models/
+
+# misc
+.DS_Store
+*.log

@@ -1,0 +1,8 @@
+facenet-pytorch
+scikit-learn
+numpy
+pillow
+opencv-python
+tqdm
+joblib
+streamlit
