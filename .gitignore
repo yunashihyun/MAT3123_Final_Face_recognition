@@ -1,48 +1,32 @@
-# ====== Python ======
+# Python
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
 *.so
-*.egg-info/
-.dist/
-build/
-dist/
-
-# ====== venv ======
-.venv/
-venv/
-ENV/
-.env
-
-# ====== Jupyter ======
 .ipynb_checkpoints/
 
-# ====== OS / editor ======
-.DS_Store
-<<<<<<< HEAD
-.vscode/
-.idea/
+# venv
+.venv/
+venv/
+.env
 
-# ====== project outputs (IGNORE) ======
+# caches (optional)
+.cache/
+.nv/
+.ipython/
+.jupyter/
+
+# project outputs you DON'T want on git
 artifacts/
 data/
-runs/
-logs/
-checkpoints/
-*.npz
-*.npy
-*.pt
-*.pth
-
-# ====== allow models (KEEP) ======
-!models/
-!models/**
-=======
-*.log
+infer_images/
+tmp/
 
 # ---- track only trained model files ----
 models/*
 !models/*.joblib
 !models/.gitkeep
->>>>>>> 19b2172 (Track trained model (.joblib) only)
+
+# ====== allow models (KEEP only joblib) ======
+models/*
+!models/*.joblib
+!models/.gitkeep
